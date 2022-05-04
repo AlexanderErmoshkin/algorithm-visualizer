@@ -1,0 +1,28 @@
+$line-height: 2px;
+$line-width: 16px;
+
+@mixin toggle-icon-line {
+    position: absolute;
+    width: $line-width;
+    height: $line-height;
+    background-color: var(--vt-c-white-soft);
+}
+
+@mixin list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin hor-margin-lg {
+    @media (min-width: 641px) {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@mixin align-center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
